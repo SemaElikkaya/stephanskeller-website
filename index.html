@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Stephanskeller - Restaurant im Herzen von Konstanz">
     <title>Stephanskeller | Restaurant Konstanz</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Quintessential&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="logo">Stephanskeller</div>
+
+            <!-- LOGO -->
+            <a href="#home" class="logo">
+                <img src="images/logo1.png" alt="Stephanskeller Logo">
+            </a>
+
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <!-- <li><a href="#home" class="nav-link"></a></li> -->
                 <li><a href="#about" class="nav-link">Über Uns</a></li>
                 <li><a href="#menu" class="nav-link">Speisekarte</a></li>
                 <li><a href="#gallery" class="nav-link">Galerie</a></li>
                 <li><a href="#hours" class="nav-link">Öffnungszeiten</a></li>
                 <li><a href="#contact" class="nav-link">Kontakt</a></li>
             </ul>
+
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -28,14 +39,19 @@
         </div>
     </nav>
 
+
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Stephanskeller</h1>
+            <!-- <h1 class="hero-title">Stephanskeller</h1> -->
             <p class="hero-subtitle">Kulinarische Vielfalt im Herzen von Konstanz</p>
             <a href="#menu" class="btn btn-primary">Unsere Speisekarte</a>
         </div>
+        <div class="scroll-indicator">
+            <span class="wheel"></span>
+        </div>
+
     </section>
 
     <!-- About Section -->
@@ -47,9 +63,13 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Willkommen im Stephanskeller, Ihrem Restaurant im historischen Herzen von Konstanz. Seit Jahren bieten wir unseren Gästen eine einzigartige Mischung aus internationaler Küche in gemütlicher Atmosphäre.</p>
-                    <p>Unser Restaurant befindet sich in einem historischen Gewölbekeller in der Nähe des Konstanzer Münsters. Wir legen großen Wert auf Qualität, frische Zutaten und einen herzlichen Service.</p>
-                    <p>Ob für ein romantisches Abendessen zu zweit, ein Familientreffen oder eine Feier mit Freunden - bei uns sind Sie herzlich willkommen!</p>
+                    <p>Willkommen im Stephanskeller, Ihrem Restaurant im historischen Herzen von Konstanz. Seit Jahren
+                        bieten wir unseren Gästen eine einzigartige Mischung aus internationaler Küche in gemütlicher
+                        Atmosphäre.</p>
+                    <p>Unser Restaurant befindet sich in einem historischen Gewölbekeller in der Nähe des Konstanzer
+                        Münsters. Wir legen großen Wert auf Qualität, frische Zutaten und einen herzlichen Service.</p>
+                    <p>Ob für ein romantisches Abendessen zu zweit, ein Familientreffen oder eine Feier mit Freunden -
+                        bei uns sind Sie herzlich willkommen!</p>
                 </div>
                 <div class="about-image">
                     <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
@@ -62,72 +82,122 @@
     <section class="section menu" id="menu">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Unsere Speisekarte</h2>
+                <h2 class="section-title">Speisen</h2>
                 <div class="title-underline"></div>
             </div>
-            <div class="menu-content">
-                <div class="menu-category">
-                    <h3 class="menu-category-title">Vorspeisen</h3>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Gemischter Salat</h4>
-                            <span class="price">8,50 €</span>
-                        </div>
-                        <p class="menu-item-description">Frischer Salat der Saison mit Hausdressing</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Bruschetta</h4>
-                            <span class="price">7,90 €</span>
-                        </div>
-                        <p class="menu-item-description">Geröstetes Brot mit Tomaten, Knoblauch und Basilikum</p>
+
+            <div class="menu-hero">
+                <div class="menu-hero-content">
+                    <p class="menu-intro-text">
+                        Erleben Sie eine kulinarische Reise durch verschiedene Geschmackswelten.
+                        Unsere Speisekarte vereint traditionelle Rezepte mit modernen Interpretationen
+                        und verwendet ausschließlich frische, regionale Zutaten aus der Bodenseeregion.
+                    </p>
+
+                    <div class="menu-buttons">
+                        <a href="documents/menu-de.pdf" target="_blank" class="btn-menu-minimal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                            <span>Speisekarte DE</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <span class="menu-divider">|</span>
+                        <a href="documents/menu-en.pdf" target="_blank" class="btn-menu-minimal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                            <span>Menu EN</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
-                <div class="menu-category">
-                    <h3 class="menu-category-title">Hauptgerichte</h3>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Schnitzel Wiener Art</h4>
-                            <span class="price">16,90 €</span>
-                        </div>
-                        <p class="menu-item-description">Mit Pommes und Salat</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Pizza Margherita</h4>
-                            <span class="price">9,50 €</span>
-                        </div>
-                        <p class="menu-item-description">Tomatensauce, Mozzarella, Basilikum</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Gegrillter Lachs</h4>
-                            <span class="price">19,90 €</span>
-                        </div>
-                        <p class="menu-item-description">Mit Gemüse und Kartoffeln</p>
-                    </div>
-                </div>
-
-                <div class="menu-category">
-                    <h3 class="menu-category-title">Desserts</h3>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Tiramisu</h4>
-                            <span class="price">6,50 €</span>
-                        </div>
-                        <p class="menu-item-description">Hausgemacht nach italienischem Rezept</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <h4>Gemischtes Eis</h4>
-                            <span class="price">5,90 €</span>
-                        </div>
-                        <p class="menu-item-description">3 Kugeln nach Wahl mit Sahne</p>
-                    </div>
+                <div class="menu-hero-image">
+                    <img src="images/menu-display.jpg" alt="Unsere Speisekarte">
                 </div>
             </div>
-            <p class="menu-note">Dies ist eine Auswahl unserer Speisen. Die vollständige Karte finden Sie bei uns im Restaurant.</p>
+
+            <!-- Sample Menu Items -->
+            <!-- <div class="menu-preview">
+                <h3 class="menu-preview-title">Unsere Empfehlungen</h3>
+                <div class="menu-content">
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Vorspeisen</h3>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Gemischter Salat</h4>
+                                <span class="price">8,50 €</span>
+                            </div>
+                            <p class="menu-item-description">Frischer Salat der Saison mit Hausdressing</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Bruschetta</h4>
+                                <span class="price">7,90 €</span>
+                            </div>
+                            <p class="menu-item-description">Geröstetes Brot mit Tomaten, Knoblauch und Basilikum</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Hauptgerichte</h3>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Schnitzel Wiener Art</h4>
+                                <span class="price">16,90 €</span>
+                            </div>
+                            <p class="menu-item-description">Mit Pommes und Salat</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Margherita</h4>
+                                <span class="price">9,50 €</span>
+                            </div>
+                            <p class="menu-item-description">Tomatensauce, Mozzarella, Basilikum</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Gegrillter Lachs</h4>
+                                <span class="price">19,90 €</span>
+                            </div>
+                            <p class="menu-item-description">Mit Gemüse und Kartoffeln</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Desserts</h3>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tiramisu</h4>
+                                <span class="price">6,50 €</span>
+                            </div>
+                            <p class="menu-item-description">Hausgemacht nach italienischem Rezept</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Gemischtes Eis</h4>
+                                <span class="price">5,90 €</span>
+                            </div>
+                            <p class="menu-item-description">3 Kugeln nach Wahl mit Sahne</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 
@@ -216,8 +286,8 @@
                     <div class="contact-item">
                         <h3>Adresse</h3>
                         <p>Stephanskeller<br>
-                        St. Stephans Platz 41<br>
-                        78462 Konstanz</p>
+                            St. Stephans Platz 41<br>
+                            78462 Konstanz</p>
                     </div>
                     <div class="contact-item">
                         <h3>Telefon</h3>
@@ -233,12 +303,9 @@
                     </div>
                 </div>
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.8826847676387!2d9.173524976583455!3d47.66296997119134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b07f3c684e7ef%3A0x7d1e6e8b8b8b8b8b!2sSt.%20Stephans%20Platz%2041%2C%2078462%20Konstanz!5e0!3m2!1sen!2sde!4v1234567890123!5m2!1sen!2sde" 
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.8826847676387!2d9.173524976583455!3d47.66296997119134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b07f3c684e7ef%3A0x7d1e6e8b8b8b8b8b!2sSt.%20Stephans%20Platz%2041%2C%2078462%20Konstanz!5e0!3m2!1sen!2sde!4v1234567890123!5m2!1sen!2sde"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -273,4 +340,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

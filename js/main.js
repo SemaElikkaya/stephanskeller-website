@@ -4,12 +4,45 @@ const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const navbar = document.getElementById('navbar');
 
+const closeMenu = () => {
+    navMenu.classList.remove('active');
+    navbar.classList.remove('menu-open');
+
+    const spans = hamburger.querySelectorAll('span');
+    spans[0].style.transform = 'none';
+    spans[1].style.opacity = '1';
+    spans[2].style.transform = 'none';
+};
+
+document.addEventListener('click', (e) => {
+    const isClickInsideMenu = navMenu.contains(e.target);
+    const isClickOnHamburger = hamburger.contains(e.target);
+
+    if (
+        navMenu.classList.contains('active') &&
+        !isClickInsideMenu &&
+        !isClickOnHamburger
+    ) {
+        closeMenu();
+    }
+});
+
+window.addEventListener('scroll', () => {
+    if (navMenu.classList.contains('active')) {
+        closeMenu();
+    }
+});
+
+
 hamburger.addEventListener('click', () => {
+    const isActive = navMenu.classList.contains('active');
+    
     navMenu.classList.toggle('active');
+    navbar.classList.toggle('menu-open');
     
     // Hamburger animation
     const spans = hamburger.querySelectorAll('span');
-    if (navMenu.classList.contains('active')) {
+    if (!isActive) {
         spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
         spans[1].style.opacity = '0';
         spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
@@ -24,6 +57,7 @@ hamburger.addEventListener('click', () => {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
+        navbar.classList.remove('menu-open');
         const spans = hamburger.querySelectorAll('span');
         spans[0].style.transform = 'none';
         spans[1].style.opacity = '1';

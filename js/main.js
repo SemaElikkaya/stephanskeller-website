@@ -163,21 +163,31 @@ galleryItems.forEach(item => {
 
 // ===== Active Navigation Link Highlighting =====
 const updateActiveLink = () => {
-    const scrollPosition = window.scrollY + navbar.offsetHeight + 100;
+    const scrollPosition = window.scrollY;
+    const homeSection = document.getElementById('home');
+
+    // Sayfa HOME (hero) içindeyken → hiçbir link active olmasın
+    if (homeSection && scrollPosition < homeSection.offsetHeight - navbar.offsetHeight) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        return;
+    }
+
+    const offset = scrollPosition + navbar.offsetHeight + 100;
 
     navLinks.forEach(link => {
         const section = document.querySelector(link.getAttribute('href'));
-        if (section) {
-            const sectionTop = section.offsetTop;
-            const sectionBottom = sectionTop + section.offsetHeight;
+        if (!section) return;
 
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                navLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-            }
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (offset >= sectionTop && offset < sectionBottom) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
         }
     });
 };
+
 
 window.addEventListener('scroll', updateActiveLink);
 

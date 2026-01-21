@@ -862,7 +862,6 @@ body {
 
 .time {
     font-size: 1.2rem;
-    color: var(--accent);
     font-weight: 600;
 }
 
@@ -965,9 +964,9 @@ body {
 }
 
 /* ===== Footer ===== */
-/* Minimal Footer */
+
 .footer {
-    background: var(--primary);
+    background: #2a2a2a;
     color: white;
     padding: 2rem 0;
 }

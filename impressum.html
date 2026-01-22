@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Impressum | Stephanskeller</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -181,6 +182,13 @@
             font-size: 0.9rem;
             font-style: italic;
         }
+
+        span,
+        p {
+            -webkit-touch-callout: none;
+            /* Safari’de arama menüsünü kapatır */
+        }
+
 
         /* Responsive */
         @media (max-width: 768px) {
